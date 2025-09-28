@@ -5,8 +5,11 @@ import { ReactNode } from "react";
 export interface ButtonProps {
   buttonLabel: string;
   buttonSize?: string;
-  buttonBackgroundColor?: 'red' | 'blue' | 'orange' | 'green';
+  buttonBackgroundColor?: 'red' | 'blue' | 'orange' | 'green' | 'purple' | 'slate';
   action?: () => void;
+  fullWidth?: boolean;
+  className?: string;
+  icon?: ReactNode;
 }
 
 export interface LayoutProps {
